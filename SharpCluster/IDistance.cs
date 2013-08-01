@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace SharpCluster
 {
-    public class Class1
+    public interface IDistance
     {
+        double Distance(Instance a, Instance b);
+        double Norm(Instance a);
     }
 }
