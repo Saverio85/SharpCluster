@@ -40,13 +40,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ClusteringAlgorithm.cs" />
-    <Compile Include="DataSet.cs" />
-    <Compile Include="IDistance.cs" />
-    <Compile Include="EuclidianDistance.cs" />
-    <Compile Include="Instance.cs" />
-    <Compile Include="KMeans.cs" />
+    <Compile Include="Algorithm\DBScan.cs" />
+    <Compile Include="Algorithm\HierarchicalClustering.cs" />
+    <Compile Include="Proximity\AverageProximity.cs" />
+    <Compile Include="Distance\CosineDistance.cs" />
+    <Compile Include="Algorithm\IClusteringAlgorithm.cs" />
+    <Compile Include="Core\DataSet.cs" />
+    <Compile Include="Distance\IDistance.cs" />
+    <Compile Include="Distance\EuclidianDistance.cs" />
+    <Compile Include="Core\Instance.cs" />
+    <Compile Include="Proximity\CentroidProximity.cs" />
+    <Compile Include="Proximity\IProximity.cs" />
+    <Compile Include="Algorithm\KMeans.cs" />
+    <Compile Include="Proximity\MaxProximity.cs" />
+    <Compile Include="Proximity\MinProximity.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Util.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
